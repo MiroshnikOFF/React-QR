@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+
+  parser:
+    image: qr
+    container_name: qr_code
+    ports:
+      - '18200:5173'
+    restart: unless-stopped
